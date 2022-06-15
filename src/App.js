@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Data from './components/Data';
+import Data2 from './components/Data2';
+import Navbar from './components/Navbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Main from './components/Main';
 
-function App() {
+
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div>
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='' element={<Main/>}/> 
+      {/* here i make a path which redirect to our mainpage */}
+        
+        <Route path='/data1' element={<Data/>}/>
+      {/* here i created a path to our first form page */}
 
-export default App;
+        <Route path='/data2' element={<Data2/>}/>
+      {/* here i created a path to our second form page */}
+
+    </Routes>
+      
+      </BrowserRouter>
+    </div>
+  )
+}

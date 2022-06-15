@@ -5,9 +5,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(../src/Assests/medi.jpg);
+  background-size: 100%;
+
+  background-repeat: no-repeat;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#abcc{
+  color: black;
+  text-shadow: 2px 2px white;
+  line-height: 1.6;
+  margin-top: -40px;
+  width: 50%;
+  margin: 20px;
+
+}
+
+.aaaa{
+  padding: 50px;
+  background-image: url(./Assests/back.jpg);
+  background-size: 100%;
+}
+
+#qwer{
+  background-image: url(../src/Assests/navb.jpg);
+  background-size: 100%;
+}
+
+#efgh{
+  background-image: url(./Assests/back.jpg);
+  background-size: 100%;
+
 }
